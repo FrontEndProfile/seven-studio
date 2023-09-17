@@ -1,0 +1,490 @@
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1304px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .marquee-container {
+        transform: rotate(312deg);
+        margin-top: -814px;
+        margin-right: -1288px;
+        display: flow-root;
+    }
+
+    .marquee-wrapper .marquee-block {
+        height: 2433px;
+        float: right;
+    }
+}
+
+@media (max-width: 1300px) {
+    .service-sec .nav-link {
+        font-size: 22px;
+    }
+
+    .month-box .price-sec {
+        margin-top: 36px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hero-sec .text-box h1 {
+        font-size: 48px;
+    }
+    .marquee-container {
+        margin-right: -1788px;
+    }
+    .service-sec .nav-link {
+        font-size: 18px;
+    }
+
+    .contact-sec .form-sec .form-control {
+        font-size: 20px;
+    }
+
+    .hero-sec .text-box h1 span::after {
+        width: 229px;
+    }
+
+    .text-box h3 {
+        font-size: 32px;
+    }
+
+    .text-box h1 {
+        font-size: 48px;
+    }
+
+    .service-sec .month-box.text-box h3 {
+
+        font-size: 28px;
+
+    }
+}
+
+@media (max-width: 991px) {
+    .nav {
+        flex-wrap: nowrap;
+        width: 1100px;
+    }
+    .img-3 {
+        max-height: 237px;
+    }
+    .service-sec .nav {
+        max-width: 100%;
+    }
+
+    .btn-branding {
+        padding: 12px 22px;
+    }
+
+    .about-header {
+        overflow: hidden;
+    }
+
+    .scroll {
+        overflow: scroll;
+    }
+
+    header nav .nav-item .nav-link {
+        padding: 0px 8px !important;
+        font-size: 14px;
+    }
+
+    .hero-sec .text-box h1 {
+        font-size: 40px;
+    }
+
+    .hero-sec .text-box p {
+        font-size: 18px;
+    }
+
+    .hero-sec .text-box h1 span::after {
+        width: 193px;
+        height: 25px;
+    }
+
+    .btn-default {
+        font-size: 20px;
+        height: 64px;
+        max-width: 450px;
+    }
+
+    .text-box h3 {
+        font-size: 28px;
+    }
+
+    .btn-arrow {
+        width: 160px;
+        height: 160px;
+    }
+
+    .text-box h4 {
+        font-size: 20px;
+    }
+
+    .text-box h2 {
+        font-size: 32px;
+    }
+
+    .service-sec .nav-link {
+        font-size: 17px;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero .img-holder img {
+        height: 400px;
+        object-fit: cover;
+    }
+    .img-3 {
+        max-height: 197px;
+    }
+    .marquee-wrapper {
+        height: 40vh;
+        overflow: hidden;
+    }
+    .marquee-container {
+        margin-top: -887px;
+        margin-left: -540px;
+    }
+    .marquee-inner {
+        margin: 20px 0 19px 10px;
+    }
+    .hero-sec .text-box h1 {
+        font-size: 36px;
+        font-family: 'Integral CF';
+        font-weight: 500;
+    }
+
+    .contact-sec .text-box h2 br {
+        display: none;
+    }
+
+    .marquee-wrapper .marquee-block {
+        width: 200px;
+        height: 800px;
+    }
+
+    .marquee-item {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .contact-sec .text-box h2 {
+        margin-bottom: 12px;
+    }
+
+    .contact-sec .text-box h4 {
+        margin-bottom: 16px;
+    }
+
+    .about-header .accordion-item [aria-expanded='true'] {
+        color: #0F0F0F;
+
+    }
+
+    .about-header .service-sec {
+        padding: 104px 0px 0px;
+    }
+
+    .contact-sec {
+        margin: 64px 0px;
+    }
+
+    .button-list li {
+        margin-right: 8px;
+        margin-bottom: 12px;
+    }
+
+    .bottom-space {
+        margin-bottom: 64px;
+    }
+
+    .button-list {
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    .contact-sec .form-sec .form-group {
+        margin-bottom: 36px;
+    }
+
+    .contact-sec .form-sec {
+        margin-top: 36px;
+    }
+
+    .scroll {
+        margin-right: -30px;
+    }
+
+    .tab-sec .nav-link {
+        margin-right: 12px;
+    }
+
+    .nav {
+        width: 980px;
+    }
+
+    .tab-sec {
+        padding-bottom: 64px;
+    }
+
+    .row.tab-space>* {
+        padding: 0px !important;
+    }
+
+    .tab-space {
+        margin: 16px 0px 32px;
+    }
+
+    .tab-space h4 {
+        margin-bottom: 12px;
+    }
+
+    .about-header .process-media .about-para p {
+        padding-bottom: 0px;
+        max-width: 654px;
+    }
+
+    .about-para {
+        border-bottom: 1px solid transparent;
+        padding-bottom: 0;
+        margin-bottom: 64px;
+    }
+
+    .about-header .process-media .text-box p {
+        margin-top: 16px;
+    }
+
+    .drop-arrow {
+        display: none;
+    }
+
+    header .navbar {
+        padding-top: 28px;
+    }
+
+    .about-header .process-media {
+        padding: 44px 0px 60px;
+    }
+
+    .about-hero {
+        margin-bottom: 24px;
+        margin-top: 16px;
+    }
+
+    .hero-sec .text-box p {
+        font-size: 13px;
+        max-width: 352px;
+    }
+
+    .btn-default {
+        font-size: 16px;
+        height: 58px;
+        max-width: 334px;
+        margin: 20px auto 0;
+    }
+
+ 
+
+    .text-box h4 {
+        font-size: 24px;
+    }
+
+    .text-box p {
+        font-size: 13px;
+    }
+
+    .hero-sec .text-box h1 {
+        margin-top: 136px;
+    }
+
+    .text-box h3 {
+        font-size: 24px;
+    }
+
+    .process-media {
+        padding: 64px 0px 73px;
+    }
+
+    .space {
+        margin: 64px 0px 32px;
+    }
+
+    .row.space>* {
+        padding: 0px !important;
+    }
+
+    .row>* {
+        padding: 0px 16px;
+    }
+
+    .service-space {
+        display: none;
+    }
+
+    .service-sec .month-box.text-box h3 {
+        font-size: 24px;
+    }
+
+    .service-sec .text-box h1 {
+        font-size: 42px;
+    }
+
+    .month-box {
+        padding: 36px 16px;
+    }
+
+    .detail-box .text-box h3 {
+        font-size: 36px;
+        padding: 36px 16px;
+    }
+
+    .month-box .price-sec {
+        margin-top: 48px;
+    }
+
+    .showcase-sec .card h3 {
+        margin: 12px 0px;
+    }
+
+    .swiper-slider {
+        margin-left: 16px;
+        margin-top: 40px;
+    }
+
+    .product-sec {
+        padding: 64px 0px 39px;
+    }
+
+    .client-sec .swiper-button-next,
+    .client-sec .swiper-button-prev {
+        display: none;
+    }
+
+    footer {
+        padding: 47px 0px 14px;
+    }
+
+    .social-link li a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 89px;
+        background: white;
+        width: 94%;
+        padding: 25px;
+        z-index: 9999;
+    }
+
+    header nav .nav-item .nav-link {
+        padding: 12px 8px !important;
+    }
+
+    .social-link li a span {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-bottom {
+        margin-top: 26px;
+        padding-top: 15px;
+    }
+
+    .social-link li:first-child {
+        margin-left: 0px;
+    }
+
+    .social-link li {
+        margin-left: 16px;
+    }
+
+    .social-link li a span img {
+        width: 10px;
+        height: 10px;
+    }
+
+    footer .text-box .btn-default {
+        font-size: 24px;
+    }
+
+    .footer-lsit {
+        margin: 72px 0px;
+    }
+
+    .client-sec {
+        padding: 56px 0px;
+    }
+
+    .service-sec {
+        margin-top: 64px;
+        padding: 60px 0px 40px;
+    }
+
+    .product-sec .text-box h4 {
+        margin-bottom: 12px;
+    }
+
+    .showcase-sec .btn-default {
+        width: 275px;
+        font-size: 24px;
+        margin-top: 28px;
+    }
+
+    .btn-arrow {
+        display: none;
+    }
+
+    .showcase-sec .card {
+        margin-bottom: 20px;
+    }
+
+    .showcase-sec .text-box h4 {
+        margin-bottom: 12px;
+    }
+
+    .row-space {
+        margin-bottom: 40px;
+    }
+
+    .process-media .text-box h1 {
+        margin-bottom: 12px;
+    }
+
+    .text-box h1 {
+        font-size: 24px;
+    }
+
+    .process-media .text-box p {
+        margin-top: 12px;
+    }
+
+    .hero-sec .text-box h1 span::after {
+        width: 173px;
+        height: 19px;
+        bottom: -1px;
+
+    }
+}
+
+@media (max-width: 575px) {
+    .social-link {
+        justify-content: center;
+        margin-top: 40px;
+    }.img-3 {
+        max-height: 163px;
+    }
+}

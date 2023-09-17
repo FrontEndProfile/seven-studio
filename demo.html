@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>PORTFOLIO</title>
+</head>
+
+<body>
+    <section class="showcase-sec my-5 py-5">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="card border-0 text-box">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#cardModal1"
+                                    data-image-source="https://fakeimg.pl/300x300?text=ID+NO+:+1">
+                                    <div class="img-holder">
+                                        <img src="images/moda-1.png" alt="" class="img-fluid">
+                                        <div class="">
+                                            <span><img src="images/arrow-down-solid.svg" alt=""
+                                                    class="img-fluid"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h3>MOBILE APP DESIGN</h3>
+                                <p>A design agency is a creative business that specializes in providing a wide range of
+                                    design services to clients. These agencies typically have a team of skilled
+                                    professionals with expertise in various areas of design.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 text-box">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#cardModal2"
+                                    data-image-source="https://fakeimg.pl/300x300?text=ID+NO+:+2">
+                                    <div class="img-holder">
+                                        <img src="images/modal-2.png" alt="" class="img-fluid">
+                                        <div class="">
+                                            <span><img src="images/arrow-down-solid.svg" alt=""
+                                                    class="img-fluid"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <h3>WEB APP DESIGN</h3>
+                                <p>A design agency is a creative business that specializes in providing a wide range of
+                                    design services to clients. These agencies typically have a team of skilled
+                                    professionals with expertise in various areas of design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal EACH NEED -->
+    <div class="modal fade" id="cardModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="" class="img-fluid" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".card a").click(function () {
+                var imageSource = $(this).data("image-source"); // Get the clicked card's image source
+                $("#modalImage").attr("src", imageSource);
+                $("#cardModal").modal("show");
+            });
+            $("#cardModal").on("hidden.bs.modal", function () {
+                $("#modalImage").attr("src", "");
+            });
+        });
+
+    </script>
+</body>
+
+</html>

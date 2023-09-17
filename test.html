@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Form with Attachment</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <h1>Email Form with Attachment</h1>
+    <form id="emailForm">
+        <label for="recipientEmail">Recipient Email:</label>
+        <input type="email" id="recipientEmail" required><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea><br>
+
+        <label for="attachment">Attachment (PDF):</label>
+        <input type="file" id="attachment" accept=".pdf" required><br>
+
+        <button type="submit">Send Email</button>
+    </form>
+
+    <script>
+        document.getElementById("emailForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const recipientEmail = document.getElementById("recipientEmail").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+            const attachment = document.getElementById("attachment").files[0];
+
+            const formData = new FormData();
+            formData.append("to", recipientEmail);
+            formData.append("subject", subject);
+            formData.append("message", message);
+            formData.append("attachment", attachment);
+
+            Email.send({
+                SecureToken: "YOUR_SMTPJS_SECURE_TOKEN",
+                To: recipientEmail,
+                From: "your-email@example.com",
+                Subject: subject,
+                Body: message,
+                Attachments: [
+                    {
+                        name: attachment.name,
+                        data: attachment,
+                    },
+                ],
+            }).then(
+                (message) => {
+                    alert("Email sent successfully!");
+                },
+                (error) => {
+                    console.error("Email not sent:", error);
+                }
+            );
+        });
+    </script>
+</body>
+</html>
