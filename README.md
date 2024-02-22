@@ -1,9 +1,7 @@
 
-# Welcome to the Seven Studio website repository! Below are the live links to each page:
+# 🚀 Welcome to the Seven Studio website repository! 
 
-- [Seven Studio Home](https://seven-studio.vercel.app)
-  
-## Pages:
+## 🌟 Live Links
 
 - ℹ️ [About Us](https://seven-studio.vercel.app/about-us.html)
 - 📞 [Contact Us](https://seven-studio.vercel.app/contact-us.html)
